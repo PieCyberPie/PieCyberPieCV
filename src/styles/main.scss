@@ -5,3 +5,7 @@
 @import "./page";
 @import "./page-body";
 @import "./about-me";
+
+html {
+  scroll-behavior: smooth;
+}
