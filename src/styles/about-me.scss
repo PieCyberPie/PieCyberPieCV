@@ -1,0 +1,21 @@
+.about-me {
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    &__title {
+      font-size: 32px;
+      grid-column: span 6;
+    }
+    &__text {
+      grid-column: 3/7;
+    }
+    &__info {
+      &__list {
+        list-style: inside;
+        &__item {
+          margin-block: 10px;
+        }
+      }
+    }
+  }
+}
