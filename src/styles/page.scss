@@ -1,0 +1,38 @@
+.page {
+  background-color: $body-color;
+  width: $body-width;
+  height: $body-height;
+
+  border: 1px solid $secondary-color;
+  border-radius: 15px;
+  padding: 25px;
+
+  filter: drop-shadow(0 0 10px $secondary-color);
+
+  &__me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__name {
+      font-size: 48px;
+      font-weight: 600;
+    }
+    &__photo {
+      background-image: url(../images/myphoto.png);
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      border-radius: 100%;
+      border: 1px solid $primary-color;
+    }
+    &__role {
+      color: $secondary-color;
+      font-size: 20px;
+    }
+    &__and-role {
+      @include padding-inline;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

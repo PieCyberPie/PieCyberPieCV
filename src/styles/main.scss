@@ -1,3 +1,6 @@
-body {
-  margin: 0;
-}
+@import "utils/reset";
+@import "utils/utils";
+@import "utils/variables";
+@import "./info-and-contacts";
+@import "./page";
+@import "./page-body";
