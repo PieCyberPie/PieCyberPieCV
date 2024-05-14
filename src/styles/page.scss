@@ -1,10 +1,11 @@
 .page {
   background-color: $body-color;
   width: $body-width;
-  height: auto;
+  margin-inline: 20px;
 
   border: 1px solid $secondary-color;
   border-radius: 15px;
+
   @include global-padding;
 
   filter: drop-shadow(0 0 10px $secondary-color);
