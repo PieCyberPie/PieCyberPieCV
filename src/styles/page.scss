@@ -1,11 +1,11 @@
 .page {
   background-color: $body-color;
   width: $body-width;
-  height: $body-height;
+  height: auto;
 
   border: 1px solid $secondary-color;
   border-radius: 15px;
-  padding: 25px;
+  @include global-padding;
 
   filter: drop-shadow(0 0 10px $secondary-color);
 
@@ -30,7 +30,8 @@
       font-size: 20px;
     }
     &__and-role {
-      @include padding-inline;
+      margin-bottom: 50px;
+
       display: flex;
       flex-direction: column;
     }
