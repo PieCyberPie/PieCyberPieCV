@@ -4,7 +4,7 @@
   grid-gap: 40px;
   grid-template-columns: 0.2fr 1fr 0.2fr 1fr;
 
-  margin-bottom: 50px;
+  @include margin-bottom;
   &__title {
     font-weight: 600;
   }

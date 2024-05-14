@@ -31,7 +31,7 @@
       font-size: 20px;
     }
     &__and-role {
-      margin-bottom: 50px;
+      @include margin-bottom;
 
       display: flex;
       flex-direction: column;
