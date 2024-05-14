@@ -1,7 +1,16 @@
 .about-me {
   &__skills-container {
-    display: grid;
+    grid-column: 3/7;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+
     &__skill {
+      padding: 5px 10px;
+      border-radius: 10px;
+      text-align: center;
+      background-color: $light-color;
     }
   }
 
