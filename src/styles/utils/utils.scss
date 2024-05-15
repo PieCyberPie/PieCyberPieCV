@@ -1,5 +1,14 @@
+@mixin on-mobile {
+  @media (width < 500px) {
+    @content;
+  }
+}
+
 @mixin global-padding {
   padding: 50px;
+  @include on-mobile {
+    padding: 25px;
+  }
 }
 
 @mixin margin-bottom {

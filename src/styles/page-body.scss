@@ -6,4 +6,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   color: $primary-color;
+  @include on-mobile {
+    margin: 0;
+  }
 }

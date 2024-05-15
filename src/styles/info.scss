@@ -4,6 +4,9 @@
   grid-gap: 40px;
   grid-template-columns: 0.2fr 1fr 0.2fr 1fr;
 
+  @include on-mobile {
+    grid-template-columns: 1fr 1fr;
+  }
   @include margin-bottom;
   &__title {
     font-weight: 600;
@@ -25,4 +28,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include on-mobile {
+    gap: 10px;
+    justify-content: center;
+  }
 }

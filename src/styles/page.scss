@@ -1,24 +1,38 @@
 .page {
   background-color: $body-color;
   width: $body-width;
-  margin-inline: 20px;
 
   border: 1px solid $secondary-color;
   border-radius: 15px;
 
   @include global-padding;
 
+  @include on-mobile {
+    border: none;
+    filter: none;
+    width: 100%;
+  }
   filter: drop-shadow(0 0 10px $secondary-color);
 
   &__me {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include on-mobile {
+      flex-direction: column-reverse;
+      align-items: start;
+    }
     &__name {
       font-size: 48px;
       font-weight: 600;
+      @include on-mobile {
+        margin-bottom: 20px;
+      }
     }
     &__photo {
+      @include on-mobile {
+        margin-bottom: 20px;
+      }
       background-image: url(../images/myphoto.png);
       width: 100px;
       height: 100px;
@@ -32,7 +46,9 @@
     }
     &__and-role {
       @include margin-bottom;
-
+      @include on-mobile {
+        margin-bottom: 40px;
+      }
       display: flex;
       flex-direction: column;
     }
