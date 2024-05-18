@@ -33,12 +33,17 @@
       @include on-mobile {
         margin-bottom: 20px;
       }
-      background-image: url(../images/myphoto.png);
+
+      background-image: url(../images/myphoto.jpg);
       width: 100px;
       height: 100px;
       background-size: cover;
       border-radius: 100%;
       border: 1px solid $primary-color;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
     &__role {
       color: $secondary-color;
